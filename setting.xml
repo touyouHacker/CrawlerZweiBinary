@@ -10,14 +10,13 @@
 
 	<Nichannel>
 		<ITA>
-			<URL>http://engawa.2ch.net/poverty/</URL>
+			<URL>http://awabi.2ch.net/bird/</URL>
 		</ITA>
 	</Nichannel>
 
 	<SubjectGet>
 		<SaveDirectory>c:/czwei/SubjectGet</SaveDirectory>
-		<!--  10分 /600000ms -->
-		<LoopTimeMinute>10</LoopTimeMinute>
+		<LoopTimeMinute>30</LoopTimeMinute>
 			<HTTP>
 				<UserAgent>Monazilla/1.00 (CZwei/1.0)</UserAgent>
 				<ReTryDownload>0</ReTryDownload>
@@ -28,8 +27,7 @@
 
 	<DatDownloder>
 		<SaveDirectory>c:/czwei/DatDownloder</SaveDirectory>
-		<!--  60分/3600000ms -->
-		<LoopTimeMinute>60</LoopTimeMinute>
+		<LoopTimeMinute>240</LoopTimeMinute>
 			<HTTP>
 				<UserAgent>Monazilla/1.00 (CZwei/1.0)</UserAgent>
 				<ReTryDownload>0</ReTryDownload>
@@ -40,15 +38,12 @@
 
 	<ContentsDownloder>
 		<SaveDirectory>c:/czwei/Contents</SaveDirectory>
-		<!--  30分/1800000ms -->
-		<LoopTimeMinute>30</LoopTimeMinute>
+		<LoopTimeMinute>60</LoopTimeMinute>
 		<HTTP>
 			<UserAgent>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/536.30.1 (KHTML, like Gecko) Version/6.0.5 Safari/536.30.1</UserAgent>
 			<ReTryDownload>1</ReTryDownload>
-			<!-- 1分 -->
-			<ConnectTimeout>360000</ConnectTimeout>
-			<!-- 2分 -->
-			<ReadTimeout>720000</ReadTimeout>
+			<ConnectTimeout>120000</ConnectTimeout>
+			<ReadTimeout>120000</ReadTimeout>
 		</HTTP>
 	</ContentsDownloder>
 
